@@ -1,39 +1,24 @@
-/* Flexicon Style Template for Markdown Export */
+/* JasonEuc Style Template for Markdown Export */
 
 /* Imports for Inter, Lato, and News Cycle */
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=News+Cycle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap');
 
 body { 
-    font-family: Inter, 'News Cycle', Helvetica, sans-serif; 
+    font-family: Inter, Helvetica, sans-serif; 
     margin: 40px; 
     line-height: 1.6; 
     color: #333;
 }
 
-/* Flexicon Branding Header */
-body::before {
-    content: "Flexicon";
-    display: block;
-    font-family: Lato, sans-serif;
-    color: #ed174f;
-    font-size: 2.25em;
-    font-weight: 900;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    border-top: 5px solid #fff200; /* Yellow top-line */
-    padding-top: 10px;
-}
-
 /* Headings */
 h1, h2, h3 { 
-    color: #004990; 
+    color: #002366; 
 }
 
 h1 { 
     font-family: Inter; 
     font-weight: 900; 
-    border-bottom: 2px solid #004990; 
+    border-bottom: 2px solid #002366; 
     padding-bottom: 5px;
     text-align: center; 
 }
@@ -41,7 +26,7 @@ h1 {
 h2 { 
     font-family: Inter; 
     font-weight: 700; 
-    border-bottom: 2px solid #004990; 
+    border-bottom: 2px solid #002366; 
     padding-bottom: 5px; 
     margin-top: 40px;
 }
@@ -79,6 +64,6 @@ blockquote {
 hr {
     border: none; 
     height: 1.5px; 
-    background-color: #004990; 
+    background-color: #002366; 
     margin: 16px 0 20px 0;
 }
