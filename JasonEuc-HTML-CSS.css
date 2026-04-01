@@ -92,22 +92,79 @@ strong {
     color: #231F20;
 }
 
-/* Blockquotes - Styled with Flag Orange accent */
+/* --- Blockquotes (Default Formatting for ">" symbol) --- */
 blockquote {
-    font-style: italic !important;
-    color: #3C3C3C !important; /* Anthracite */ 
-    background-color: #FFF0EB !important; /* Very light Flag Orange tint */
-    margin: 20px 0 !important;
-    padding: 15px 20px !important; 
-    border-left: 6px solid #F15524 !important; /* Flag Orange accent bar */
-    border-radius: 4px;
-    display: block; 
+    padding: 15px 20px;
+    margin: 20px 0;
+    background-color: #f2f2f2 !important; 
+    border-left: 8px solid #555555 !important; 
+    color: #000000 !important; 
+    border-radius: 0 4px 4px 0;
 }
 
 blockquote p {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+}
+
+/* --- GFM Markdown Alerts --- */
+.markdown-alert {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-left: 8px solid;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.markdown-alert-title {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    font-family: Inter, sans-serif;
+}
+
+.markdown-alert-note {
+    border-left-color: #002664 !important;
+    background-color: #e3f2fd !important;
+    color: #002664 !important;
+}
+
+.markdown-alert-tip {
+    border-left-color: #1b5e20 !important;
+    background-color: #e8f5e9 !important;
+    color: #1b5e20 !important;
+}
+
+.markdown-alert-important {
+    border-left-color: #4a148c !important;
+    background-color: #f3e5f5 !important;
+    color: #4a148c !important;
+}
+
+.markdown-alert-warning {
+    border-left-color: #EF8200 !important;
+    background-color: #fff3e0 !important;
+    color: #333 !important;
+}
+
+.markdown-alert-caution {
+    border-left-color: #DA291C !important;
+    background-color: #ffebee !important;
+    color: #B71C1C !important;
+}
+
+/* Lists and Spacing */
+ul {
+    margin-top: -5px !important; 
+    margin-bottom: 10px; 
+    padding-left: 20px !important; 
+}
+
+ul li {
+    list-style-type: disc !important;
+    padding-left: 5px !important; 
 }
 
 /* Horizontal Rule */
@@ -118,27 +175,21 @@ hr {
     margin: 16px 0 20px 0;
 }
 
-/* Fenced Code Blocks - Using Old Gold for the background */
+/* Fenced Code Blocks */
 pre {
-    background-color: #FEF3D9 !important; /* Light Old Gold Background */
+    background-color: #f4f4f4 !important;
+    color: #000000 !important;
     padding: 15px !important;
-    border-radius: 5px !important;
-    border: 1px solid #FDB913 !important; /* Old Gold Border */
-    overflow-x: auto; 
+    border-radius: 0 4px 4px 0 !important;
+    border: 1px solid #ddd !important;
+    border-left: 8px solid #555555 !important; 
+    overflow-x: auto;
     margin: 20px 0 !important;
 }
 
 code {
     font-family: 'SF Mono', 'Consolas', monospace !important;
     font-size: 0.9em !important;
-    color: #231F20 !important;
-}
-
-:not(pre) > code {
-    background-color: #FEF3D9 !important;
-    padding: 2px 4px !important;
-    border-radius: 3px !important;
-    border: 1px solid #FDB913 !important;
 }
 
 /* Status Badges */
@@ -151,20 +202,8 @@ code {
     text-transform: uppercase;
     border-radius: 4px;
     vertical-align: middle;
-    margin-right: 5px;
 }
 
-.draft {
-    background-color: #FDB913; /* Old Gold */
-    color: #231F20;
-}
-
-.approved {
-    background-color: #00AFB5; /* Turquoise */
-    color: #fff;
-}
-
-.confidential {
-    background-color: #F15524; /* Flag Orange */
-    color: #fff;
-}
+.draft { background-color: #fff200; color: #333; }
+.approved { background-color: #004990; color: #fff; }
+.confidential { background-color: #ed174f; color: #fff; border: 1px solid #333; }
