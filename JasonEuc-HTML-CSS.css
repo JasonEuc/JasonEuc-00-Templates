@@ -114,7 +114,7 @@ blockquote p {
 hr {
     border: none; 
     height: 1.5px; 
-    background-color: #041E42; 
+    background-color: #00AFB5 !important; /* Turquoise */ 
     margin: 16px 0 20px 0;
 }
 
