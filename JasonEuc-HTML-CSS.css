@@ -30,7 +30,8 @@ body::before {
 
 /* Headings */
 h1, h2, h3 { 
-    color: #231F20; /* Neutral Black */
+    /*color: #231F20;*/ /* Neutral Black */
+    color: #041E42 !important; /* Obsidian Blue */
 }
 
 h1 { 
@@ -45,7 +46,7 @@ h1 {
 h2 { 
     font-family: Inter; 
     font-weight: 700; 
-    color: #3C3C3C; /* Anthracite */
+    color: #041E42 !important; /* Obsidian Blue */
     border-bottom: 2px solid #00AFB5 !important; /* Turquoise */
     padding-bottom: 15px;
     margin-top: 25px;
@@ -94,7 +95,7 @@ strong {
 /* Blockquotes - Styled with Flag Orange accent */
 blockquote {
     font-style: italic !important;
-    color: #041E42 !important; 
+    color: #3C3C3C !important; /* Anthracite */ 
     background-color: #FFF0EB !important; /* Very light Flag Orange tint */
     margin: 20px 0 !important;
     padding: 15px 20px !important; 
