@@ -16,28 +16,25 @@ body::before {
     content: "JasE Enterprises";
     display: block;
     font-family: Inter, sans-serif;
-    /*color: #0097F5;*/ /* Sky Glide Blue */
     color: #F15524 !important; /* Flag Orange */
     font-size: 2.25em;
     font-weight: 900;
     text-align: right;
     text-transform: capitalize;
     margin-bottom: 20px;
-    /*border-top: 10px solid #FDB913;*/ /* Old Gold Thicker Line */
     border-top: 10px solid #041E42 !important; /* Obsidian Blue */
     padding-top: 10px;
 }
 
 /* Headings */
 h1, h2, h3 { 
-    /*color: #231F20;*/ /* Neutral Black */
-    color: #041E42 !important; /* Obsidian Blue */
+   color: #041E42 !important; /* Obsidian Blue */
 }
 
 h1 { 
     font-family: Inter; 
     font-weight: 700; 
-    /*border-bottom: 2px solid #0097F5 !important;*/ /* Sky Glide Blue */
+    color: #041E42 !important; /* Obsidian Blue */
     border-bottom: 2px solid #00AFB5 !important; /* Turquoise */
     padding-bottom: 10px; 
     text-align: center; 
@@ -96,14 +93,33 @@ strong {
 blockquote {
     padding: 15px 20px;
     margin: 20px 0;
-    background-color: #f2f2f2 !important; 
     border-left: 8px solid #3C3C3C !important; 
-    color: #000000 !important; 
+    background-color: #b1b1b1 !important;
+    color: #000000 !important;
     border-radius: 0 4px 4px 0;
 }
 
 blockquote p {
     margin: 0;
+}
+
+/* Fenced Code Blocks */
+pre {
+    background-color: #b1b1b1 !important;
+    color: #000000 !important;
+    padding: 15px !important;
+    border-radius: 0 4px 4px 0 !important;
+    border: 1px solid #303030 !important;
+    border-left: 8px solid #3c3c3c !important; 
+    overflow-x: auto;
+    margin: 5px 0 !important;
+}
+
+code {
+    font-family: 'SF Mono', 'Consolas', monospace !important;
+    font-size: 0.9em !important;
+    background-color: #b1b1b1 !important;
+    color: #000000 !important;
 }
 
 /* --- GFM Markdown Alerts --- */
@@ -125,46 +141,39 @@ blockquote p {
     font-family: Inter, sans-serif;
 }
 
+/* Note - Safety Blue (General Information) */
 .markdown-alert-note {
-    border-left-color: #002664 !important;
+    border-left-color: #002664 !important; /* ANSI Safety Blue */
     background-color: #e3f2fd !important;
     color: #002664 !important;
 }
 
+/* Tip - Professional Green (Best Practice) */
 .markdown-alert-tip {
-    border-left-color: #1b5e20 !important;
-    background-color: #e8f5e9 !important;
+    border-left-color: #1b5e20 !important; /* Darker Green Border */
+    background-color: #e8f5e9 !important; /* Lighter Green Background */
     color: #1b5e20 !important;
 }
 
+/* Important - Visual Purple (Critical Technical Info) */
 .markdown-alert-important {
-    border-left-color: #4a148c !important;
-    background-color: #f3e5f5 !important;
+    border-left-color: #4a148c !important; /* Darker Purple Border */
+    background-color: #f3e5f5 !important; /* Lighter Purple Background */
     color: #4a148c !important;
 }
 
+/* Warning - Safety Orange (Moderate Hazard) */
 .markdown-alert-warning {
-    border-left-color: #EF8200 !important;
+    border-left-color: #EF8200 !important; /* ANSI Safety Orange */
     background-color: #fff3e0 !important;
     color: #333 !important;
 }
 
+/* Caution - Safety Red (High Hazard / Danger) */
 .markdown-alert-caution {
-    border-left-color: #DA291C !important;
+    border-left-color: #B71C1C !important; /* ANSI Safety Red */
     background-color: #ffebee !important;
     color: #B71C1C !important;
-}
-
-/* Lists and Spacing */
-ul {
-    margin-top: -5px !important; 
-    margin-bottom: 10px; 
-    padding-left: 20px !important; 
-}
-
-ul li {
-    list-style-type: disc !important;
-    padding-left: 5px !important; 
 }
 
 /* Horizontal Rule */
@@ -175,22 +184,7 @@ hr {
     margin: 16px 0 20px 0;
 }
 
-/* Fenced Code Blocks */
-pre {
-    background-color: #f4f4f4 !important;
-    color: #000000 !important;
-    padding: 15px !important;
-    border-radius: 0 4px 4px 0 !important;
-    border: 1px solid #ddd !important;
-    border-left: 8px solid #3C3C3C !important; 
-    overflow-x: auto;
-    margin: 20px 0 !important;
-}
 
-code {
-    font-family: 'SF Mono', 'Consolas', monospace !important;
-    font-size: 0.9em !important;
-}
 
 /* Status Badges */
 .badge {
@@ -204,6 +198,6 @@ code {
     vertical-align: middle;
 }
 
-.draft { background-color: #fff200; color: #333; }
-.approved { background-color: #004990; color: #fff; }
-.confidential { background-color: #ed174f; color: #fff; border: 1px solid #333; }
+.draft { background-color: #d6a946; color: #333; }
+.approved { background-color: #00AFB5; color: #333; }
+.confidential { background-color: #fad1db; color: #333333; border: 1px solid #333; }
