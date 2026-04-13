@@ -94,7 +94,7 @@ blockquote {
     padding: 15px 20px;
     margin: 20px 0;
     border-left: 8px solid #3C3C3C !important; 
-    background-color: #b1b1b1 !important;
+    background-color: #c8c8c8 !important;
     color: #000000 !important;
     border-radius: 0 4px 4px 0;
 }
@@ -105,11 +105,11 @@ blockquote p {
 
 /* Fenced Code Blocks */
 pre {
-    background-color: #b1b1b1 !important;
+    background-color: #c8c8c8 !important;
     color: #000000 !important;
     padding: 15px !important;
     border-radius: 0 4px 4px 0 !important;
-    border: 1px solid #303030 !important;
+    border: 1px solid #3C3C3C !important;
     border-left: 8px solid #3c3c3c !important; 
     overflow-x: auto;
     margin: 5px 0 !important;
@@ -118,7 +118,7 @@ pre {
 code {
     font-family: 'SF Mono', 'Consolas', monospace !important;
     font-size: 0.9em !important;
-    background-color: #b1b1b1 !important;
+    background-color: #c8c8c8 !important;
     color: #000000 !important;
 }
 
