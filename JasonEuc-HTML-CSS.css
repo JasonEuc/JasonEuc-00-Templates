@@ -165,7 +165,7 @@ code {
 /* Warning - Safety Orange (Moderate Hazard) */
 .markdown-alert-warning {
     border-left-color: #EF8200 !important; /* ANSI Safety Orange */
-    background-color: #fadab3 !important;
+    background-color: #fce6cc !important;
     color: #EF8200 !important;
 }
 
@@ -183,8 +183,6 @@ hr {
     background-color: #00AFB5 !important; /* Turquoise */ 
     margin: 16px 0 20px 0;
 }
-
-
 
 /* Status Badges */
 .badge {
