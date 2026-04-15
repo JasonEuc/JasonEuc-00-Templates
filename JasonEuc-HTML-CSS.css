@@ -1,10 +1,10 @@
 /* JasE Enterprises Style Template for Markdown Export */
 
 /* Imports for Inter, Lato, and News Cycle */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lato:wght@400;700;900&family=News+Cycle:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 body { 
-    font-family: Inter, 'News Cycle', Helvetica, sans-serif; 
+    font-family: Inter, Helvetica, sans-serif; 
     margin: 40px; 
     line-height: 1.6; 
     color:  #041E42; /* Obsidian Blue "Ink" */
