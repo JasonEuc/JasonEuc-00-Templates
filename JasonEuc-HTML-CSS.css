@@ -1,7 +1,7 @@
 /* JasE Enterprises Style Template for Markdown Export */
 
 /* Imports for Inter, Lato, and News Cycle */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300,400,500,600,700&display=swap');
 
 body { 
     font-family: Inter, Helvetica, sans-serif; 
@@ -105,7 +105,8 @@ blockquote p {
 
 /* Fenced Code Blocks */
 pre {
-    background-color: #c8c8c8 !important;
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 500 !important;background-color: #c8c8c8 !important;
     color: #000000 !important;
     padding: 15px !important;
     border-radius: 0 4px 4px 0 !important;
@@ -116,10 +117,13 @@ pre {
 }
 
 code {
-    font-family: 'SF Mono', 'Consolas', monospace !important;
-    font-size: 0.9em !important;
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 500 !important;
+    font-size: 1em !important; 
     background-color: #c8c8c8 !important;
     color: #000000 !important;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
 /* --- GFM Markdown Alerts --- */
@@ -229,9 +233,9 @@ tr:nth-child(even) {
     background-color: #f8f9fa; /* Subtle zebra striping for readability */
 }
 
-tr:last-of-type {
+/*tr:last-of-type {
     border-bottom: 2px solid #004990;
-}
+}*/
 
 tr:hover {
     background-color: #f1f4f8; /* Highlights the row for easier tracking */
