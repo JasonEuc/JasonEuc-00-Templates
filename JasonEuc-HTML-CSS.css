@@ -221,7 +221,7 @@ th, td {
 }
 
 th {
-    background-color: #004990; /* Flexicon Blue */
+    background-color: #00AFB5 !important; /* Turquoise */ 
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
