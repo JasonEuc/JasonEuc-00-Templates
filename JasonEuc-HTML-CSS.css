@@ -106,14 +106,21 @@ blockquote p {
 /* Fenced Code Blocks */
 pre {
     font-family: 'Fira Code', monospace !important;
-    font-weight: 500 !important;background-color: #c8c8c8 !important;
+    font-weight: 500 !important;
+    background-color: #c8c8c8 !important;
     color: #000000 !important;
     padding: 15px !important;
+    padding-left: 1em;
+    text-indent: -1em;
     border-radius: 0 4px 4px 0 !important;
     border: 1px solid #3C3C3C !important;
     border-left: 8px solid #3c3c3c !important; 
     overflow-x: auto;
     margin: 5px 0 !important;
+    /* Added Word Wrap Logic */
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
 }
 
 code {
@@ -124,6 +131,10 @@ code {
     color: #000000 !important;
     padding: 2px 4px;
     border-radius: 3px;
+    /* Added Word Wrap Logic */
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
 }
 
 /* --- GFM Markdown Alerts --- */
