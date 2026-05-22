@@ -1,0 +1,257 @@
+/* JasE Enterprises Style Template for Markdown Export */
+
+/* Imports for Inter, Lato, and News Cycle */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300,400,500,600,700&display=swap');
+
+body { 
+    font-family: Inter, Helvetica, sans-serif; 
+    margin: 40px; 
+    line-height: 1.6; 
+    color:  #041E42; /* Obsidian Blue "Ink" */
+    background-color: #FFF9E6; /* Very light tint of Old Gold for background */
+}
+
+/* JasE Enterprises Branding Header */
+body::before {
+    content: "JasE Enterprises";
+    display: block;
+    font-family: Montserrat, Inter, sans-serif;
+    color: #F15524 !important; /* Flag Orange */
+    font-size: 2.25em;
+    font-weight: 700;
+    text-align: right;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-top: 10px solid #041E42 !important; /* Obsidian Blue */
+    padding-top: 10px;
+}
+
+/* Headings */
+h1, h2, h3 { 
+   color: #041E42 !important; /* Obsidian Blue */
+}
+
+h1 { 
+    font-family: Inter; 
+    font-weight: 700; 
+    color: #041E42 !important; /* Obsidian Blue */
+    border-bottom: 2px solid #00AFB5 !important; /* Turquoise */
+    padding-bottom: 10px; 
+    text-align: center; 
+}
+
+h2 { 
+    font-family: Inter; 
+    font-weight: 700; 
+    color: #041E42 !important; /* Obsidian Blue */
+    border-bottom: 2px solid #00AFB5 !important; /* Turquoise */
+    padding-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: Inter, sans-serif;
+    color: #3C3C3C; /* Anthracite */
+    margin-top: 20px;
+}
+
+/* Lists and Spacing - Functionality ported from FCSS */
+ul {
+    margin-top: -5px !important; 
+    margin-bottom: 10px; 
+    padding-left: 20px !important; 
+}
+
+ul li {
+    list-style-type: disc !important;
+    padding-left: 5px !important; 
+}
+
+ul ul {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    padding-left: 20px !important; 
+}
+
+ul ul li {
+    list-style-type: circle !important;
+    padding-left: 5px !important; 
+}
+
+p + ul, p + ol {
+    margin-top: -15px !important;
+}
+
+/* Emphasis and Specialized Text */
+strong {
+    font-weight: bold;
+    color: #231F20;
+}
+
+/* --- Blockquotes (Default Formatting for ">" symbol) --- */
+blockquote {
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-left: 8px solid #3C3C3C !important; 
+    background-color: #c8c8c8 !important;
+    color: #000000 !important;
+    border-radius: 0 4px 4px 0;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* Fenced Code Blocks */
+pre {
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 500 !important;
+    background-color: #c8c8c8 !important;
+    color: #000000 !important;
+    padding: 15px !important;
+    padding-left: 1em;
+    text-indent: -1em;
+    border-radius: 0 4px 4px 0 !important;
+    border: 1px solid #3C3C3C !important;
+    border-left: 8px solid #3c3c3c !important; 
+    overflow-x: auto;
+    margin: 5px 0 !important;
+    /* Added Word Wrap Logic */
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+}
+
+code {
+    font-family: 'Fira Code', monospace !important;
+    font-weight: 500 !important;
+    font-size: 1em !important; 
+    background-color: #c8c8c8 !important;
+    color: #000000 !important;
+    padding: 2px 4px;
+    border-radius: 3px;
+    /* Added Word Wrap Logic */
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+}
+
+/* --- GFM Markdown Alerts --- */
+.markdown-alert {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-left: 8px solid;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.markdown-alert-title {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    font-family: Inter, sans-serif;
+}
+
+/* Note - Safety Blue (General Information) */
+.markdown-alert-note {
+    border-left-color: #002664 !important; /* ANSI Safety Blue */
+    background-color: #e3f2fd !important;
+    color: #002664 !important;
+}
+
+/* Tip - Professional Green (Best Practice) */
+.markdown-alert-tip {
+    border-left-color: #1b5e20 !important; /* Darker Green Border */
+    background-color: #e8f5e9 !important; /* Lighter Green Background */
+    color: #1b5e20 !important;
+}
+
+/* Important - Visual Purple (Critical Technical Info) */
+.markdown-alert-important {
+    border-left-color: #4a148c !important; /* Darker Purple Border */
+    background-color: #f3e5f5 !important; /* Lighter Purple Background */
+    color: #4a148c !important;
+}
+
+/* Warning - Safety Orange (Moderate Hazard) */
+.markdown-alert-warning {
+    border-left-color: #FF7900 !important; /* ANSI Safety Orange */
+    background-color: #ffe4cc !important;
+    color: #b35500 !important;
+}
+
+/* Caution - Safety Red (High Hazard / Danger) */
+.markdown-alert-caution {
+    border-left-color: #B71C1C !important; /* ANSI Safety Red */
+    background-color: #ffebee !important;
+    color: #B71C1C !important;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none; 
+    height: 1.5px; 
+    background-color: #00AFB5 !important; /* Turquoise */ 
+    margin: 16px 0 20px 0;
+}
+
+/* Status Badges */
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75em;
+    font-weight: 900;
+    font-family: Inter, sans-serif;
+    text-transform: uppercase;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.draft { background-color: #d6a946; color: #333; }
+.approved { background-color: #00AFB5; color: #333; }
+.confidential { background-color: #fad1db; color: #333333; border: 1px solid #333; }
+
+/* --- Tables (The "Cramped" Fix) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95em;
+    font-family: Inter, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 12px 15px; /* This adds the necessary breathing room */
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #00AFB5 !important; /* Turquoise */ 
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(odd) {
+    background-color: #e6f7f8; /* Subtle zebra striping for readability */
+}
+
+tr:nth-child(even) {
+    background-color: #b3e7e9; /* Subtle zebra striping for readability */
+}
+
+/*tr:last-of-type {
+    border-bottom: 2px solid #004990;
+}*/
+
+tr:hover {
+    background-color: #fcddd3; /* Highlights the row for easier tracking */
+}
