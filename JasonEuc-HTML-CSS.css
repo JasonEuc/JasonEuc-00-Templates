@@ -4,27 +4,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300,400,500,600,700&display=swap');
 
 body { 
-    font-family: Inter, Helvetica, sans-serif; 
+    font-family: Montserrat, Inter, sans-serif, Arial;
     margin: 40px; 
     line-height: 1.6; 
     color:  #041E42; /* Obsidian Blue "Ink" */
     background-color: #FFF9E6; /* Very light tint of Old Gold for background */
 }
 
-/* JasE Enterprises Branding Header */
+/* --- JasE Branding Header & Accents --- */
+
+body { 
+    font-family: 'Inter', sans-serif, Arial; 
+    margin: 40px; 
+    line-height: 1.6; 
+    color: #333;
+    /* This adds a true page-wide accent line across the very top edge of the document */
+    border-top: 10px solid #041E42 !important; /* Obsidian Blue */
+    padding-top: 20px;
+}
+
+/* --- JasE Branding Header (Resized & Centered Fix) --- */
+body::before {
+    content: ""; /* Clears the raw image out of the content stream so it can be resized */
+    display: block;
+    
+    /* Set up the image as a background instead */
+    background-image: url("https://raw.githubusercontent.com/JasonEuc/JasonEuc-00-Templates/main/JasE-Hex-Logo.png");
+    background-size: contain;     /* Forces the logo to scale perfectly inside its box */
+    background-repeat: no-repeat;
+    background-position: right;  /* Right justifies the logo inside the box */
+    
+    /* Force exact structural sizing */
+    width: 100%;                  /* Occupies full text width to allow true centering */
+    height: 90px;                /* Controls the vertical height of the logo area */
+    
+    /* Spacing around the element */
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+/* JasE Enterprises Branding Header
 body::before {
     content: "JasE Enterprises";
     display: block;
     font-family: Montserrat, Inter, sans-serif;
-    color: #F15524 !important; /* Flag Orange */
+    color: #F15524 !important; 
     font-size: 2.25em;
     font-weight: 700;
     text-align: right;
     text-transform: capitalize;
     margin-bottom: 20px;
-    border-top: 10px solid #041E42 !important; /* Obsidian Blue */
+    border-top: 10px solid #041E42 !important; 
     padding-top: 10px;
 }
+*/
 
 /* Headings */
 h1, h2, h3 { 
