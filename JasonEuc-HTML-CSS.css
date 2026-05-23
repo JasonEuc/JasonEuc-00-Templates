@@ -141,7 +141,7 @@ blockquote p {
 pre {
     font-family: 'JetBrains Mono', monospace !important;
     font-weight: 500 !important;
-    background-color: #fcddd3 !important;
+    background-color: #feeee9 !important;
     color: #041E42 !important;
     padding: 15px !important;
     padding-left: 1em;
@@ -161,7 +161,7 @@ code {
     font-family: 'JetBrains Mono', monospace !important;
     font-weight: 500 !important;
     font-size: 1em !important; 
-    background-color: #fcddd3 !important;
+    background-color: #feeee9 !important;
     color: #041E42 !important;
     padding: 2px 4px;
     /*border-radius: 3px;*/
